@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunalizer - Home</title>
+  <script src="https://kit.fontawesome.com/5dac4a0927.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-P7MzPYbxKbNem7F3bAdXeG7JHgpN5UFTv+/4lWDwi5+Bzh15E8I6ss++UmkifQ2G7WhmAvl6F10q5J+Nh9l4ng==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-P7MzPYbxKbNem7F3bAdXeG7JHgpN5UFTv+/4lWDwi5+Bzh15E8I6ss++UmkifQ2G7WhmAvl6F10q5J+Nh9l4ng==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><img src="sun-logo.png" alt="Sun Logo" style="width: 30px; height: 30px;">Sunalizer</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <h2>Solar Panel Performance</h2>
+      <p>Get real-time data on voltage and current values.</p>
+      <div class="meter-readings">
+        <div class="meter-reading">
+          <div class="box">
+            <h3>Voltage</h3>
+            <p id="voltage">24.00 V</p>
+          </div>
+        </div>
+        <div class="meter-reading">
+          <div class="box">
+            <h3>Current</h3>
+            <p id="current">1.42 A</p>
+          </div>
+        </div>
+        <div class="meter-reading">
+          <div class="box">
+            <h3>Power</h3>
+            <p id="power">34 W</p>
+          </div>
+        </div>
+      </div>
+      <div class="overview">
+        <div class="boxx">
+          <h3><i class="fas fa-sun"></i>  Solar Radiance</h3>
+          <canvas id="solarRadianceChart" width="200" height="200"></canvas>
+        </div>
+        <div class="boxx">
+          <h3><i class="fas fa-chart-line"></i>  Power Output</h3>
+          <canvas id="powerOutputChart" width="200" height="200"></canvas>
+        </div>
+        
+        <div class="boxx">
+          <h3><i class="fas fa-battery-quarter"></i>  Energy Storage</h3>
+          <canvas id="energyStorageChart" width="200" height="200"></canvas>
+        </div>
+        <div class="boxx">
+          <h3><i class="fas fa-history"></i> Latest Events</h3>
+          <div class="events">
+            <p>Yesterday at 8:39am - You disabled all panels.</p>
+            <p>Yesterday at 1:21pm - You enabled all panels.</p>
+            <p>Yesterday at 6:12pm - You disabled panel 3.</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="box1">
+        <h3>Panel Status</h3>
+        <table id="panelStatusTable">
+          <thead>
+            <tr>
+              <th>Panel</th>
+              <th>Solar Radiance</th>
+              <th>Output Voltage</th>
+              <th>Output Current</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>0.32 kW/m²</td>
+              <td>24.00 V</td>
+              <td>1.42 A</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>0.40 kW/m²</td>
+              <td>24.00 V</td>
+              <td>1.81 A</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>0.70 kW/m²</td>
+              <td>0.00 V</td>
+              <td>0.00 A</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>0.13 kW/m²</td>
+              <td>24.00 V</td>
+              <td>0.60 A</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>0.86 kW/m²</td>
+              <td>24.00 V</td>
+              <td>3.87 A</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>0.70 kW/m²</td>
+              <td>24.00 V</td>
+              <td>3.17 A</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>0.25 kW/m²</td>
+              <td>24.00 V</td>
+              <td>1.12 A</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>0.04 kW/m²</td>
+              <td>24.00 V</td>
+              <td>0.20 A</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      
+    </div>
+    
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Sunalizer. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  
+</body>
+</html>

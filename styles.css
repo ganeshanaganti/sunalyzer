@@ -207,4 +207,43 @@ footer {
   color: #333;
 }
 
-/* Adjust styles as needed */
+/* Add these styles to your existing CSS file */
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Adjust container padding for smaller screens */
+  }
+
+  header h1 {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+
+  nav ul li {
+    margin-left: 10px; /* Decrease margin between navigation links for smaller screens */
+  }
+
+  .hero h2 {
+    font-size: 28px; /* Decrease font size for smaller screens */
+  }
+
+  .meter-reading {
+    margin: 10px 0; /* Adjust margin for meter readings on smaller screens */
+  }
+
+  .box {
+    width: calc(50% - 20px); /* Adjust box width for smaller screens */
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero h2 {
+    font-size: 24px; /* Further decrease font size for even smaller screens */
+  }
+
+  .box {
+    width: calc(100% - 20px); /* Adjust box width for smallest screens */
+  }
+}
+

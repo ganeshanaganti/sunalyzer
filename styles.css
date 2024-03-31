@@ -110,7 +110,7 @@ nav ul li a.active {
   padding: 20px;
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  color: #333; /* Updated text color */
+  color: #000000; /* Updated text color */
 }
 .boxx {
   width: 250px;
@@ -207,43 +207,123 @@ footer {
   color: #333;
 }
 
-/* Add these styles to your existing CSS file */
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 0 10px; /* Adjust container padding for smaller screens */
-  }
-
-  header h1 {
-    font-size: 20px; /* Decrease font size for smaller screens */
-  }
-
-  nav ul li {
-    margin-left: 10px; /* Decrease margin between navigation links for smaller screens */
-  }
-
-  .hero h2 {
-    font-size: 28px; /* Decrease font size for smaller screens */
-  }
-
-  .meter-reading {
-    margin: 10px 0; /* Adjust margin for meter readings on smaller screens */
-  }
-
-  .box {
-    width: calc(50% - 20px); /* Adjust box width for smaller screens */
-    margin: 10px;
-  }
+.project-overview h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width: 576px) {
-  .hero h2 {
-    font-size: 24px; /* Further decrease font size for even smaller screens */
-  }
-
-  .box {
-    width: calc(100% - 20px); /* Adjust box width for smallest screens */
-  }
+.project-overview p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000;
 }
 
+.team-details {
+  margin-top: 50px;
+}
+.team{
+  margin-top: 50px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  width: 1150px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.team-details h2 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.team-details ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.team-details li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.contact-info {
+  margin-top: 50px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  width: 1150px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info h1 {
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.contact-info .services-section {
+  margin-top: 50px;
+}
+
+.contact-info .services-section h3 {
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.contact-info .services-section ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.contact-info .services-section li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.contact-info .contact-details {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact-info .contact-details p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+/* Adjust styles as needed */
+/* Define a new background image for mobile devices */
+@media (max-width: 768px) {
+  .hero {
+    background-image: url('solar-panel-mobile.jpg'); /* New background image for mobile */
+  }
+}

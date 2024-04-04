@@ -9,6 +9,8 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+  background-image: url('solar-panel-desktop.jpg');
+  background-size: cover;
 }
 
 .container {
@@ -60,7 +62,7 @@ nav ul li a.active {
 
 /* Hero Section Styles */
 .hero {
-  background-image: url('solar-panel.jpg'); /* Replace with your image */
+  background-image: url(''); 
   background-size: cover;
   background-position: center;
   color: #000000;
@@ -69,6 +71,11 @@ nav ul li a.active {
 
 .hero h2 {
   font-size: 36px;
+  margin-bottom: 20px;
+}
+.hero h1{
+  margin-left: 150px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 .meter-readings {
@@ -237,7 +244,15 @@ footer {
   color: #000000;
   margin-bottom: 20px;
 }
-
+.project-overview ul{
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-top: 10px;
+}
+.project-overview li{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 .team-details ul {
   padding-left: 20px;
   list-style-type: none;
@@ -289,7 +304,7 @@ footer {
 
 .contact-info .services-section ul {
   padding-left: 20px;
-  list-style-type: none;
+  list-style-type: square;
 }
 
 .contact-info .services-section li {
@@ -320,10 +335,84 @@ footer {
   color: #000000;
   text-decoration: none;
 }
-/* Adjust styles as needed */
-/* Define a new background image for mobile devices */
+
+/* Adjustments for mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
+  body {
+    font-size: 16px; 
+    /* background-image: url(solar-panel-mobile.jpg); */
+    background-image: url(solar-panel-mobile.jpg);
+    background-attachment: fixed;
+  }
+
+  .container {
+    padding: 0 10px; /* Reduce container padding for smaller screens */
+  }
+
+  header {
+    padding: 10px 0; /* Reduce header padding for smaller screens */
+  }
+
+  header h1 {
+    font-size: 20px; /* Decrease header font size */
+  }
+
+  nav ul li {
+    margin-left: 10px; /* Reduce margin between navigation items */
+  }
+
   .hero {
-    background-image: url('solar-panel-mobile.jpg'); /* New background image for mobile */
+    padding: 50px 0; /* Adjust hero section padding */
+  }
+
+  .hero h1 {
+    margin-left: 0; /* Center align hero heading */
+    font-size: 24px; /* Decrease hero heading font size */
+  }
+
+  .meter-readings {
+    flex-direction: row; /* Display meter readings in a column */
+    margin-bottom: 20px;
+  }
+
+  .meter-reading {
+    margin: 10px 0;
+    margin-right: auto;
+  }
+
+  .box,
+  .boxx,
+  .box1 {
+    width: auto; /* Make boxes full width on mobile */
+    margin: 10px 0; /* Add margin between boxes */
+  }
+
+  .box h3 {
+    font-size: 16px; /* Decrease box heading font size */
+  }
+
+  .project-overview h2 {
+    font-size: 24px; /* Decrease project overview heading font size */
+  }
+
+  .project-overview p,
+  .project-overview li {
+    font-size: 14px; /* Decrease project overview text font size */
+  }
+
+  .team,
+  .contact-info {
+    width: auto; /* Set width to auto for better responsiveness */
+    padding: 20px; /* Add padding to team and contact info sections */
+    margin-top: 20px; /* Add margin at the top */
+  }
+
+  .contact-info h1,
+  .contact-info h2 {
+    font-size: 20px; /* Decrease contact info heading font size */
+  }
+
+  .social-media a {
+    font-size: 20px; /* Decrease social media icon size */
   }
 }
